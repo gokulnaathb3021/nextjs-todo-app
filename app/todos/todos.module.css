@@ -1,0 +1,74 @@
+.todosPage {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 30px;
+}
+
+.logout {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.titlentodosnlogout {
+  width: 700px;
+  height: 700px;
+  background-color: lightpink;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.todo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  /* padding: 10px; */
+}
+
+.todo li {
+  list-style: none;
+  background-color: crimson;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 3px;
+}
+
+.todo button {
+  border: none;
+  color: black;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.formnlogout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.formnlogout input {
+  padding: 20px;
+  border-radius: 10px;
+  font-size: large;
+  margin: 5px;
+}
+
+.formnlogout button {
+  padding: 20px;
+  border-radius: 10px;
+  font-size: large;
+  cursor: pointer;
+}

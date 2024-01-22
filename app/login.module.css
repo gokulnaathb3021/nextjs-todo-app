@@ -1,0 +1,101 @@
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.loginForm {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: black;
+  padding: 50px;
+  gap: 30px;
+  border-radius: 10px;
+}
+
+.loginForm input {
+  padding: 25px;
+  border: 2px solid brown;
+  border-radius: 5px;
+  background-color: antiquewhite;
+  color: blue;
+  width: 100%;
+  font-size: large;
+}
+
+.loginForm input:hover {
+  background-color: burlywood;
+}
+
+.loginForm button {
+  padding: 20px;
+  background-color: sandybrown;
+  border-radius: 10px;
+  width: 100%;
+  font-size: xx-large;
+}
+
+.loginForm button:hover {
+  background-color: sienna;
+  color: white;
+}
+
+.loginForm h2 {
+  font-size: 35px;
+  color: aliceblue;
+}
+
+.register {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 500px;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  font-size: large;
+}
+
+.register button {
+  background-color: sandybrown;
+  margin: 10px;
+  border-radius: 3px;
+  padding: 3px;
+  color: black;
+  font-size: larger;
+}
+
+.register button:hover {
+  background-color: sienna;
+  color: white;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: wheat;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 30px;
+  width: 100%;
+  font-weight: 500;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}

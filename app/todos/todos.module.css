@@ -52,6 +52,13 @@
   cursor: pointer;
 }
 
+.todo input {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: large;
+  margin: 3px;
+}
+
 .formnlogout {
   display: flex;
   align-items: center;
@@ -71,4 +78,52 @@
   border-radius: 10px;
   font-size: large;
   cursor: pointer;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 700px;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid black;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.inputnupdate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.inputnupdate button {
+  width: 25%;
+  background-color: seagreen;
+  color: white;
+  padding: 18px;
+  border-radius: 20px;
+  font-size: larger;
+}
+
+.modal input {
+  width: 70%;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.modal h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.close {
+  padding: 18px;
+  font-size: larger;
 }

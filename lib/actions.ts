@@ -1,6 +1,5 @@
 "use server";
 
-import { revalidatePath } from "next/cache";
 import ToDoModel from "./todo-model";
 import dbConnect from "./db-connect";
 
@@ -16,7 +15,7 @@ export async function createToDo(formData: FormData) {
     await newToDo.save();
   } catch (error) {
     console.log(error);
-    throw new Error("Failed to create new user!");
+    throw new Error("Failed to create new todo!");
   }
 }
 
@@ -39,5 +38,18 @@ export async function deleteToDo(formData: FormData) {
   } catch (error) {
     console.log(error);
     throw new Error("Failed to delete the todo!");
+  }
+}
+
+export async function updateToDo(formData: FormData) {
+  try {
+    const data = Object.fromEntries(formData);
+    const _id = data.id;
+    delete data.id;
+    await dbConnect();
+    await ToDoModel.findByIdAndUpdate(_id, data);
+  } catch (error) {
+    console.log(error);
+    throw new Error("Failed to update the todo.");
   }
 }
